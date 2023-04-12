@@ -30,3 +30,8 @@ img {
 .title {
     color:darkgoldenrod;
 }
+
+.legend {
+    color:bisque;
+    font-style:italic;
+}

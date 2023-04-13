@@ -1,6 +1,8 @@
 body{
     background-color:rgb(39, 37, 37);
-    text-align: center;
+    text-align: justify;
+    max-width: 80ch;
+    margin:auto;
 }
 
 .txt {
@@ -34,4 +36,9 @@ img {
 .legend {
     color:bisque;
     font-style:italic;
+}
+
+.header_fr {
+  position: sticky;
+  top: 0;
 }

@@ -30,6 +30,7 @@ img {
 }
 
 .title {
+    text-align: center;
     color:darkgoldenrod;
 }
 
@@ -41,4 +42,6 @@ img {
 .header_fr {
   position: sticky;
   top: 0;
+  background-color: #D9D2BA;
+  text-align: center;
 }

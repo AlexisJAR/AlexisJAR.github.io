@@ -6,53 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/theme.css">
     <title>AlexisJar - Portfolio</title>
-    <!--<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
        $(function(){
-          $('.header_fr').load("../header_fr.html");
+          $('.header_fr').load("../header_fr.html"); 
        });
-    </script>-->
+    </script> 
     </head>
     <body>
-      <div class="header_fr"><span>
-          <a class="link" href="../index.html">Accueil</a>
-          <a class="link" href="../list_projects_fr.html">Réalisations</a>
-          <a class="link" href="../list_skill_fr.html">Compétences</a>
-      </span></div>
+        <div class="header_fr">
+            <span class="mandatedname">Alexis JAR | </span>
+            <span class="separator"></span>
+            <span class="menu">
+                <a class="link" href="../index.html">Accueil</a>
+                <a class="link" href="../list_projects_fr.html">Réalisations</a>
+                <a class="link" href="../list_skill_fr.html">Compétences</a>
+                <a class="link" href="../timeline.html">Parcours</a>
+                <a class="link" href="../contact.html">Contact</a>
+            </span>
+        </div>
     <h2 class="title">Phytolearning</h2>
     <div class="txt">
         <p>
-            Nous travaillâmes au projet Phytolearning au cours de notre cinquième semestre d’études.
-
-            Son principal but était de développer une application permettant aux employés de l’entreprise nous commanditant de créer et faire passer diverses formations.
-            Nous devons aussi laisser la possibilité aux dirigeants de l’entreprise la possibilité d’assigner une formation spécifique à un employé spécifique.
-
-            Enfin, nous devions prévoir un système laissant la possibilité au formateur de créer un questionnaire, dont le but est de tester si les connaissances
-            apportées par la formation ont été acquises par le personnel formé, en plus d’un moyen de consulter et d’exporter les réponses apportées auxdits questionnaires.
+            <u>Phytolearning</u> fut un projet porté par l’entreprise d'analyses scientifiques <b>« Phytocontrol »</b>, qui souhaitait mettre en place une plateforme afin de <b>dispenser des formations à leur personnel</b>.
+        </p>    
+        <p>    
+            Afin de coller aux besoins de l’entreprise, nous devions <b>créer un site</b> sur lequel trois types d’utilisateurs peuvent se connecter : 
+            <b>les apprenants, les formateurs et les dirigeants</b>. 
+           <br> Les apprenants peuvent <b>suivre les formations et répondre à des questionnaires</b> et évaluations sur ces dernières. 
+           <br> Les formateurs peuvent <b>créer les formations et les questionnaires</b> et évaluations susmentionnées. 
+           <br> Enfin, les dirigeants peuvent <b>ajouter des comptes</b> apprenants et formateurs, et <b>assigner des formations</b> à des apprenants.
+        </p>    
+        <p>    
+            Pour mener à bien ce projet, nous fûmes une équipe de <b>5 personnes</b>. 
+            Cependant, ce projet fut l’occasion de mettre en pratique une technique, dite du <i>« Pair Programming »</i>. 
+            Ou « Programmation par Paire ». Ainsi, au moins <b>deux développeurs s’occuperont d’une tâche</b>, ce qui permet la <b>diminution du nombre de bugs</b>, et une <b>plus grande cohésion</b> dans 
+            l’équipe comme dans le code, améliorant la qualité du travail effectué.
         </p>
         <p>
-            Au cours de ce projet, nous avons mis à l’honneur une méthodologie de travail que nous n’avions pas employé auparavant : le pair programming.
-            Cette méthode consiste à développer à deux, une personne écrivant le code et la seconde le secondant, l’aiguillant en cas de problème et lui conseillant des solutions.
-            Les rôles de programmeur et relecteur s’inversant au bout d’un certain laps de temps. Dans notre cas, environ à chaque heure.
-
-            Cette méthode permet de rendre notre production plus fiable, car vérifiée par deux personnes différentes.
-            Cela permet également de solutionner un problème plus rapidement, et favorise les échanges au sein de l’équipe de développement, rendant notre code plus uniformisé,
-            lisible, lui donnant par conséquent une plus grande qualité.
+            Afin de mener à bien ce projet, nous commençâmes par <b>créer une base de données</b>, qui nous permettra non seulement de prévoir un endroit où stocker nos données, 
+            cela nous permit une visualisation du traitement et de l’affichage des données, car cela nous permit de mieux en comprendre leur nature. 
+            Ensuite, nous nous sommes séparés en deux groupes. 
+            Un premier gérait le développement des comportements du site, de sa base de données, et la liaison entre ces comportements cachés et la base de données. 
+            Le second groupe, lui, devait s’occuper de l’affichage du site, et des comportements du site visibles par l’utilisateur. 
+            Pour ma part, j’appartenais à la <b>seconde équipe</b>. Nous avons commencé par créer une <b>page de saisie de formation</b>. 
+            Dans cette dernière, le formateur pourra entrer du texte, le répartir sur plusieurs pages et ajouter des éléments <i>multimédias</i>. 
+            Puis nous y avons ajouté des éléments permettant d’<b>ajouter des tests</b>, quiz, et autres questionnaires, en fin de formation. 
+            La seconde page développée est celle permettant l’<b>affichage des formations et des tests</b> aux apprenants. Ceci fait, nous avons fait une page permettant 
+            aux dirigeants de <b>saisir une fiche informative concernant un apprenant ou un formateur</b>. 
+            Cette fiche créée <b>les informations nécessaires pour</b> que les apprenants et les formateurs puissent <b>se connecter et interagir</b> avec l'application. 
+            De cette même page, les dirigeants pourront également <b>assigner un apprenant à une formation</b>. Enfin, nous créâmes une page de connexion et une page d’accueil, 
+            affichant les divers liens menant aux pages décrites plus tôt, en fonction du rang assigné à la personne se connectant.
         </p>
         <p>
-            Ayant réalisé notre projet en utilisant Java JEE et Angular, nous nous sommes répartis en plusieurs équipes de pair.
-            L’une se focalisant sur le backend JEE et l’autre sur le frontend Angular. J’appartenait à la seconde équipe.
-
-            Après un semestre passé en télétravail afin d’éviter toute contamination entre nous, nous réussîmes à livrer un projet fonctionnel à notre commanditaire.
+            Bien qu’ayant livré un produit fonctionnel et conforme aux attentes, nous avons eu cependant peu de nouvelles après la livraison du projet, 
+            ce dernier devant avant tout servir en interne.
+        </p>
+        <p>
+            Sur le plan personnel, le <i>« Pair Programming »</i> m’a apporté une <b>meilleure vision de la collaboration</b>, en plus de m’ouvrir à d’<b>autres façons de concevoir 
+                une solution</b> informatique, m’apportant une grande opportunité pour apprendre et évoluer dans le milieu du développement.
         </p>
     </div>
     <div class="imgHolder">
         <figure>
-            <img src="../Ressources-fr/Phytolearning_page_accueil.png" alt="Page d'accueil du site">
+            <img src="../Ressources-fr/Phytolearning_page_accueil.png" alt="Page d'accueil du site" class="horizontalimg">
             <figcaption class="legend">Page d'accueil du site créé</figcaption>
         </figure>
         <figure>
-            <img src="../Ressources-fr/créer_formation_5_ajouter_media.png" alt="Page de création d'une formation sur le site">
+            <img src="../Ressources-fr/créer_formation_5_ajouter_media.png" alt="Page de création d'une formation sur le site" class="horizontalimg">
             <figcaption class="legend">Page de création de formations sur le site</figcaption>
         </figure>
     </div>

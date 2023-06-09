@@ -14,41 +14,62 @@
     </script> 
     </head>
     <body>
-        <div class="header_fr"><span>
-            <a class="link" href="../index.html">Accueil</a>
-            <a class="link" href="../list_projects_fr.html">Réalisations</a>
-            <a class="link" href="../list_skill_fr.html">Compétences</a>
-        </span></div>
+        <div class="header_fr">
+            <span class="mandatedname">Alexis JAR | </span>
+            <span class="separator"></span>
+            <span class="menu">
+                <a class="link" href="../index.html">Accueil</a>
+                <a class="link" href="../list_projects_fr.html">Réalisations</a>
+                <a class="link" href="../list_skill_fr.html">Compétences</a>
+                <a class="link" href="../timeline.html">Parcours</a>
+                <a class="link" href="../contact.html">Contact</a>
+            </span>
+        </div>
     <h2 class="title">Architecture MVC/VM/P</h2>
     <div class="txt">
         <p>
-            Acronymes respectifs de « Modèle Vue Contrôleur/ViewModel/Présentation », ces trois appellations désignent en réalité un mode de construction d’applications similaire. 
-            Il s’agit de diviser les différentes pages de code qui composent une application en trois catégories. 
+            Acronymes respectifs de <b>« Modèle », « Vue », et « Contrôleur/ViewModel/Présentation »</b>, ces trois appellations désignent en réalité un mode de 
+            construction d’applications similaire. Il s’agit de <b>diviser les différentes pages de code</b> qui composent une application <b>en trois catégories</b> :
             <ul>
                 <li>
-                    La première catégorie, le modèle, sert à définir, créer, récupérer et modifier les données qui seront utilisées dans l’application. 
+                    La première catégorie, le modèle, sert à <b>définir, créer, récupérer et modifier les données</b> qui seront utilisées dans l’application.
                 </li>
                 <li>
-                    La seconde catégorie, la vue, se compose des différentes fenêtres et écrans qui serviront à l’utilisateur pour manipuler ladite application, et les données qui 
-                    la compose.
+                    La seconde catégorie, la vue, se compose des différentes <b>fenêtres et écrans qui serviront à l’utilisateur</b> pour manipuler ladite application, et les données qui la composent.
                 </li>
                 <li>
-                    Enfin, la troisième partie, qui peut prendre le nom de Contrôleur, ViewModel ou encore Présentation, sert d’intermédiaire entre la vue et le modèle, 
-                    transformant les données pour les faire s’intégrer dans l’une ou l’autre de ces catégories.
+                    Enfin, la troisième partie, qui peut prendre le nom de Contrôleur, ViewModel ou encore Présentation, sert <b>d’intermédiaire entre la vue et le modèle</b>, transformant les données pour les faire s’intégrer dans l’une ou dans l’autre de ces catégories. 
                 </li>
             </ul>
+            Cette architecture est fort appréciée, car en séparant ainsi les éléments d’une application, elle permet de <b>simplifier la modification de cette dernière, lui apportant fluidité et robustesse</b>.
         </p>     
         <p>    
             J’ai tout d’abord appris à utiliser ce type d’architecture sous le nom de MVC, lors de ma première année d’études. 
-            Plus tard, lorsque nous travaillons sur le projet <a class="link" href="../projects/hermes_fr.html">Hermès</a>, j’appris que cette architecture portait le nom de MVVM pour les 
-            technologies Android. 
-            Enfin, lors de mon entrée en entreprise et de mon travail sur le projet <a class="link" href="../projects/portail_rr_fr.html">Portail R&R</a>, je vis que cette architecture portait 
-            encore un autre nom pour les technologies WinDev : MVP.
+       <br>Plus tard, lorsque nous travaillons sur le projet <a class="link" href="../projects/hermes_fr.html">Hermès</a>, j’appris que cette architecture portait le nom de MVVM 
+        pour les technologies Android. Ce même projet où nous mîmes en place cette architecture afin <b>d’alléger l’application</b>, en ne surchargeant aucune de ses pages de code, 
+        permettant une plus grande fluidité au chargement, en plus d’être <b>aisément compréhensible</b> dans le cas où notre commanditaire souhaiterait ajouter une fonctionnalité 
+        au projet, et donc la confier à une autre équipe.
+        <br>Enfin, lors de mon entrée en entreprise et de mon travail sur le projet <a class="link" href="../projects/portail_rr_fr.html">Portail R&R</a>, 
+        je vis que cette architecture portait encore un autre nom pour les technologies WinDev : MVP. Sur ce projet, nous avions décidé de mettre en place cette architecture, 
+        à la fois dans une volonté de <b>fluidifier notre lecture du code et de l’application</b>, mais également, car, de par le <b>très grand nombre de données</b> à afficher et 
+        à saisir, une <b>architecture robuste et aisément modifiable</b> était plus que nécessaire.
+        </p>
+        <p>
+            Bien que cette architecture particulière apporte un grand nombre d’avantages, comme le fait de <b>rendre la compréhension de l’application plus aisée</b>, 
+            <b>l’allégement des pages de code</b> la composant, <b>la robustesse apportée</b> à l’application ou encore <b>l’accroissement de la versatilité</b> de l’application, 
+            en faisant pour moi comme pour un grand nombre de développeurs une architecture de référence, l’employant aussi souvent que possible, et en devenant assez familier, il est certain que ce n’est pas la <b>seule</b> architecture de code existante. 
+        </p>
+        <p>
+            Afin de mieux comprendre ces autres architectures, et de savoir dans quels contextes elles sont préférables à l’architecture « MVC/VM/P », 
+            il me faudra mettre en place une <b>veille dans les forums et magazines spécialisés</b>, et essayer de <b>mettre en pratique</b> ce que j’y lirais, 
+            y gagnant en expérience par l’expérimentation. 
+            Il me faudra également continuer de pratiquer cette architecture, afin de ne pas perdre la main, et chercher à savoir si d'autres variantes peuvent encore exister, 
+            et mettre en place une veille pour me tenir informé d'innovations apparaissant sur cette architecture.
         </p>
     </div>
     <div class="imgHolder">
         <figure>
-            <img src="../Ressources-fr/mvc.png" alt="Schéma explicatif de l'architecture MVC/VM/P">
+            <img src="../Ressources-fr/mvc.png" alt="Schéma explicatif de l'architecture MVC/VM/P" class="horizontalimg">
             <figcaption class="legend">Schéma explicatif de l'architecture MVC</figcaption>
         </figure>
     </div>

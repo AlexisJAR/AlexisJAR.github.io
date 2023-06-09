@@ -15,47 +15,66 @@
     </head>
     <body>
         <div class="header_fr">
-            <span>
+            <span class="mandatedname">Alexis JAR | </span>
+            <span class="separator"></span>
+            <span class="menu">
                 <a class="link" href="../index.html">Accueil</a>
                 <a class="link" href="../list_projects_fr.html">Réalisations</a>
                 <a class="link" href="../list_skill_fr.html">Compétences</a>
+                <a class="link" href="../timeline.html">Parcours</a>
+                <a class="link" href="../contact.html">Contact</a>
             </span>
         </div>
     <h2 class="title">Hermès</h2>_
     <div class="txt">
         <p>
-            Lors de notre quatrième semestre, nous nous sommes vus confié ce projet. 
-            Il s’agissait de développer une application mobile qui serait ensuite vendue aux crématoriums, car ciblant leurs employés.
-            Cette application a pour but d’éviter les erreurs d’inversions de cendres et d’urnes, en scannant des pastilles QR Code placées auprès des défunts avant 
-            et après la crémation. Ce même QR Code serait imprimé sur l’urne funéraire réceptionnant les cendres du défunt, et en établissant la correspondance entre les deux codes, 
-            nous réduirons considérablement le risque de remettre les cendres d’une personne à une famille qui ne serait pas la sienne.
-            
-            Enfin, cette application permet une traçabilité du processus de crémation, de la réception du corps jusqu’à la remise de l’urne, 
-            aidant les employés des crématoriums à organiser leur travail et leur communication auprès des familles.
+            Le projet <u>Hermès</u> découlait d’un besoin assez particulier. Il s’agissait d’assister les <b>employés de crématoriums</b> dans le processus de crémation, en <b>empêchant notamment 
+                d’inverser les cendres remises à la famille</b>. Notre commanditaire travaillait sur une pastille qui résisterait aux hautes températures de la crémation, 
+            tout en conservant un <b>QR Code</b> imprimé dessus. Notre rôle serait de créer une application mobile pouvant <b>lire le QR Code</b> ainsi imprimé, <b>identifiant</b> à qui <b>les cendres</b> 
+            contenues avec la pastille appartiennent. 
         </p>
         <p>    
-            Nous avons développé cette application en Java Android, afin de pouvoir la déployer sur des téléphones portables et des tablettes, 
-            support jugé plus pratique pour la cible de l’application par notre commanditaire.
-            
-            Au sein de ce projet, j’endossai le rôle de « Scrum Master ». C’est-à-dire qu’au sein de l’équipe de développement, mon rôle était d’assurer 
-            la communication entre notre client, et mes collaborateurs. 
-            
-            En outre, il m’a été incombé de développer le système d’enregistrement du défunt, ainsi que la mise à jour de son statut au sein du processus de crémation 
-            (statut allant de la réception du corps à la remise des cendres). 
+            Afin de mener à bien notre tâche, nous devions pouvoir faire en sorte que notre application puisse <b>lire les QR Codes</b>, et que l’on puisse <b>saisir des fiches informatives</b> 
+            concernant les défunts <a class="link" href="https://fr.wiktionary.org/wiki/cr%C3%A9mer" target="_blank" rel="noopener noreferrer">crémés</a>. 
+            Fiches que nous ferons entrer dans des QR Codes qu’il suffira d’imprimer sur les pastilles. Enfin, <b>un système d’étapes</b> à la lecture du QR Code nous permet de savoir 
+            à quel point du processus de crémation nous en sommes, et d’<b>envoyer un email aux gérants</b> des crématoriums utilisant l’application, 
+            <b>une fois que le défunt est passé par toutes les étapes</b> de la crémation, et peut donc être <b>remis à ses proches</b>. <br>
+            Ce projet fut <b>notre premier projet mené dans un contexte de confinement</b>, avec une équipe ne pouvant physiquement se réunir, nous laissant nous organiser par d’autres 
+            moyens.
         </p>    
         <p>    
-            Ce projet a eu la spécificité qu’il s’est déroulé durant le tout premier confinement mis en place par le gouvernement en mars 2020, 
-            et fut notre premier projet mené en télétravail. Malgré cela, ce projet fut tout de même une réussite, car nous avons livré une application fonctionnelle, 
-            dont notre client s’est montré très satisfait.
+            Pour mener à bien ce projet, nous fûmes <b>trois étudiants</b>, recevant l'aide et les conseils de notre commanditaire, <b>M.Ernest Ibanez</b>.
+        </p>
+        <p>
+            Nous commençâmes par nous <b>répartir le travail</b>. Un étudiant s’occupant de la gestion des QR Codes. Un second aurait pour responsabilité la gestion des étapes. 
+            Le dernier étudiant devant s'occuper les fiches informatives personnelles. Cette tâche m’échouant, je commençai alors par <b>créer les tables de données</b> qui serviront à stocker les 
+            fiches personnelles, ainsi que les <b>classes mettant en forme les données</b> des fiches personnelles. Ceci fait, je forgeai les pages permettant <b>la saisie et l’affichage de 
+            </b> ces fiches personnelles. Enfin, j’implémentai les <b>comportements de ces fenêtres</b>, permettant le peuplement de la table dédiée, ainsi que des fenêtres créées. Au cours de 
+            ce projet, je reçus également le rôle de <b>communiquer avec notre commanditaire</b>, lui présentant nos avancées, lui posant les questions que l’équipe se posait quant à 
+            l’identité visuelle où à l’agencement des données, permettant à mes camarades, et par corollaire au projet, de progresser plus rapidement.
+            <br> En parallèle, mes camarades de travail réussirent à mettre en place une page de lecture de données à partir d’un scan de QR Code, ainsi que l’envoi des données 
+            des fiches personnelles vers un site générant des QR Codes. Ils réussirent également à construire un système d’étapes, que l’on peut associer à une fiche informative. 
+            Système d’étape qui, lorsque la dernière étape est atteinte pour un défunt, envoie un mail à l’attention du gérant du crématorium, lui envoyant les informations de la fiche 
+            informative et lui indiquant que le défunt décrit est passé par toutes les étapes, et que les cendres peuvent donc désormais être remises aux proches.
+        </p>
+        <p>
+            Pendant que nous nous attelions à la création de l’application Android, <b>notre commanditaire réussissait plusieurs tests sur une matière</b>, dérivée de la céramique, et 
+            <b>capable de résister aux températures</b> des fours crématoires. Après la livraison de notre application, il semblerait que notre commanditaire fut satisfait. 
+            Depuis, nous ignorons si le projet est encore en cours de développement ou déjà utilisé, mais avons confiance dans le fait que <b>son porteur y est attaché</b>, de par l'innovation et l'investissement démontrés.
+        </p>
+        <p>
+            Au cours de ce projet, j’appris à travailler en équipe avec <b>une équipe distante</b>, dispersée en trois points différents. <br>
+            Si ce projet fut mené à bien sans trop d'encombres notables, je pense cependant que, si le projet était à refaire, 
+            j’améliorerais <b>la communication avec le commanditaire</b> du projet, le contactant encore <b>plus régulièrement</b> pour lui présenter nos avancées.
         </p>
     </div>
     <div class="imgHolder">
         <figure>
-            <img src="../Ressources-fr/Hermes_shema.png" alt="Schéma du déroulé d'une crémation">
+            <img src="../Ressources-fr/Hermes_shema.png" alt="Schéma du déroulé d'une crémation" class="horizontalimg">
             <figcaption class="legend">Déroulé d'une crémation</figcaption>
         </figure>
         <figure>
-            <img src="../Ressources-fr/Hermes_Screen_Recherche.png" alt="Visuel d'une page de l'application">
+            <img src="../Ressources-fr/Hermes_Screen_Recherche.png" alt="Visuel d'une page de l'application" class="verticalimg">
             <figcaption class="legend">Exemple d'une page de l'application</figcaption>
         </figure>
     </div>

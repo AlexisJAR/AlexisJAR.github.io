@@ -7,58 +7,92 @@
     <link rel="stylesheet" href="../css/theme.css">
     <title>AlexisJar - Portfolio</title>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
+    <script> 
        $(function(){
-          $('.header_fr').load("../header_fr.html");
+          $('.header_fr').load("../header_fr.html"); 
        });
-    </script>
+    </script> 
     </head>
     <body>
-        <div class="header_fr"><span>
-            <a class="link" href="../index.html">Accueil</a>
-            <a class="link" href="../list_projects_fr.html">Réalisations</a>
-            <a class="link" href="../list_skill_fr.html">Compétences</a>
-        </span></div>
+        <div class="header_fr">
+            <span class="mandatedname">Alexis JAR | </span>
+            <span class="separator"></span>
+            <span class="menu">
+                <a class="link" href="../index.html">Accueil</a>
+                <a class="link" href="../list_projects_fr.html">Réalisations</a>
+                <a class="link" href="../list_skill_fr.html">Compétences</a>
+                <a class="link" href="../timeline.html">Parcours</a>
+                <a class="link" href="../contact.html">Contact</a>
+            </span>
+        </div>
     <h2 class="title">Portail R&R</h2>
     <div class="txt">
         <p>
-            Démarré peu après mon arrivée en entreprise, lors du mois d’avril 2021, il s’agit d’un projet très ambitieux.
-            L’objectif étant de moderniser un logiciel vieux de quinze ans, à destination des employés d’un cabinet de généalogie successorale.
-            Cela est d’autant plus complexe que les collaborateurs dudit cabinet sont répartis en deux corps de métiers distincts :
+            Définition du projet : <u>Portail R&R</u>, pour <u>« Portail Recherche & Règlement »</u> est un projet visant à reforger un logiciel métier créé en <b>2003</b> 
+            et peu revisité depuis. Cet ancien logiciel était utilisé par les collaborateurs du cabinet de généalogie successorale <b>« Veyron-Perrin »</b>. 
+            Afin de mieux comprendre les actions entreprises durant ce projet, il est à noter que les collaborateurs sont répartis en <b>deux corps de métiers</b> :
+
+
             <ul>
-                <li>les chercheurs, dont le travail consiste a établir la descendance d’un défunt, et d’entrer en contact avec les héritiers.</li>
-                <li>les régleurs, dont le travail est de faire connaître le cabinet auprès des notaires pour que ces derniers leur confient des dossiers,
-                    et qui sont chargés par la suite de faire valoir les droits des héritiers retrouvés auprès des autorités judiciaires compétentes.</li>
+                <li>les <b>chercheurs</b>, dont le travail consiste à <b>établir la descendance</b> d’un défunt, et d’<b>entrer en contact avec les héritiers</b>.</li>
+                <li>les <b>régleurs</b>, ou prospecteurs-régleurs, dont le travail est de <b>faire connaître le cabinet</b> auprès des notaires pour que 
+                    ces derniers leur confient des dossiers, et qui sont chargés par la suite de <b>faire valoir les droits des héritiers</b> retrouvés 
+                    auprès des autorités judiciaires compétentes.</li>
             </ul>
         </p>
         <p>
-            Nous devions donc moderniser une application à destination de ces deux corps de métiers, leur permettant de garder chaque étape de leur dossier en mémoire,
-            et de pouvoir y accéder en cas de besoin.
-            Cependant, nous devions également importer les données déjà entrées, dans un souci d’archivage, et de permettre aux collaborateurs de continuer de travailler sans perdre
-            leur avancement.
+            Pour que notre mission soit couronnée de succès, il nous fallait <b>épurer une base de données existante</b>, 
+           <b>rendre le logiciel visuellement plus attractif et intuitif</b>, tout en <b>réintégrant d’anciennes fonctionnalités</b>, allant de la saisie et de l’affichage 
+           de données à la <b>génération de courriers et courriels</b>.
+            <br>En outre, nous devions <b>maintenir l’intégrité des données</b> stockées depuis environ <b>une vingtaine d’années</b>, tout en <b>retirant celles devenues superflues</b>. 
+            Nous aurons également à traverser des troubles au sein du cabinet, qui se manifestent par un manque de personnel en comptabilité. 
+            Un problème que nous aborderons un peu plus tard.
+        </p>    
+        <p>    
+            Pour mener à bien ce projet, nous étions une équipe de <b>deux personnes</b>, bien qu'<b>une des deux personnes</b> fut régulièrement sollicitée sur <b>des missions hors développement</b>.
+        </p>    
+        <p>    
+            La première tâche à laquelle nous nous sommes attelés est la <b>refonte de la base de données</b>. Nous y réfléchissions, 
+            <b>analysons l’ensemble des données stockées</b>, listons les champs les moins remplis, <b>organisons des réunions avec certains collaborateurs</b>, 
+            tant chercheurs que régleurs, <b>afin de savoir quelles données étaient vraiment encore utilisées</b>, et lesquelles nous pouvons sans danger retirer et supprimer. 
+            Ce travail fait, nous nous attelâmes à l’élaboration d’un <b>modèle de données</b>, et commençâmes la création de la <b>nouvelle base de données</b>. 
+            Cependant, la direction du cabinet étant inquiète de la durée prise par le développement nous demanda d’<b>accélérer notre cadence</b>. 
+            Nous fîmes donc le choix de <b>laisser de côté la modernisation de la base de données</b>, et nous sommes contentés 
+            d’<b>importer la structure et les données telles quelles</b>, sans traitement supplémentaire <b>pour gagner du temps sur le développement de l’application</b> en elle-même.
+            <br> De ce second point, nous développâmes une application offrant beaucoup de <b>fiches de saisie</b>. 
+            Des fiches de saisies pour les chercheurs, leur permettant d’entrer les informations nécessaires pour recréer une généalogie, ainsi que pour les régleurs, 
+            leur permettant de créer des fiches informatiques concernant les notaires rencontrés et possiblement mandants des dossiers confiés. 
+            <br> Cette phase terminée, nous nous concertâmes pour la réalisation d’un <b>système de création de courriers et courriels</b>, et leur impression ou envoi automatique.
+            <br> Il nous a fallu pour cela <b>lire les documents types existants</b>, puis trouver un moyen d’<b>insérer des mots-clés variables</b>, dits "signets", 
+            dans ces documents, <b>faire rédiger à l’application un courrier</b> à partir du document-type analysé et remplaçant les mots-clés par des termes spécifiques 
+            au dossier lié au courrier, puis laisser un <b>champ de contrôle à l’utilisateur</b> afin de lui permettre de <b>remanier son courrier</b> si besoin est,
+             et le laisser décider s’il souhaite <b>imprimer son courrier</b>, ou s’il souhaite <b>l’envoyer par mail</b>. 
+             Il nous a fallu donc pour chacune de ces options faire en sorte de pouvoir <b>se connecter aux imprimantes locales</b> et les faire faire imprimer le courrier 
+             ainsi généré, ou faire en sorte <b>d’envoyer le courriel</b> en se connectant à un serveur spécifique, récupérant les informations de connexion du collaborateur 
+             et les utilisant pour transmettre le courriel au bon destinataire.
         </p>
         <p>
-            Ce projet a été parsemé d’embuches. Tout d’abord, nous nous sommes demandés s’il n’était pas judicieux d’épurer notre structure de données de champs qui n’étaient
-            plus utilisés depuis dix ans. Cependant, pressés par le temps, nous n’eûmes pas le temps de faire une refonte complète de la structure de la base de données.
-
-            Nous nous sommes ensuite penchés sur l’applicatif en lui-même, cherchant à garder l’essentiel de chaque fenêtre de l’application existante pour les retranscrire dans
-            notre projet. Cela fait, nous avons décortiqué l’existant pour en connaître les comportements, et les reproduire, voire les améliorer dans notre projet.
-
-            Enfin, nous avons reçu de nouvelles demandes en cours de développement, notamment l’ajout d’un générateur de courriers, et d’un processus pour envoyer directement
-            les courriers générés par mail.
+            Alors que nous étions en train de travailler sur l’envoi de mail depuis l’application, la direction décida de <b>couper court au projet</b>, nous signifiant que le 
+            développement <b>prenait trop de temps</b> à son goût, et achetant une solution concurrente.
         </p>
         <p>
-            Cependant, dû au nombre de demandes et de retards générés par la complexité de la tâche, et aux missions annexes confiées à une partie de l’équipe de développement,
-            ce projet s’est vu abandonné en faveur de l’achat d’une application externe développée par une compagnie différente.
+            Ce projet était en réalité assez mouvementé. Bien que ce projet fut <b>prévu et planifié pour</b> être mené à bien par <b>deux personnes</b>, il était fréquent que, 
+            pour régler des problèmes de comptabilité, mon collègue et mentor au sein de la compagnie soit appelé, et ce, pour <b>des journées entières</b>. 
+            Il était donc inévitable dans ces conditions que des retards apparaissent. De plus, nous réalisions nos estimations de temps en prenant en compte que nous serions 
+            deux à travailler à temps plein, estimations qui se révélaient plus courtes que le temps de développement réel. 
+            <br>
+            Ainsi, si ce projet devait être refait, je m’emploierais à <b>donner des estimations plus réalistes</b>, afin de plus rassurer la direction. J’essayerai également de mieux leur 
+           <b>communiquer nos difficultés</b>, et de <b>communiquer plus</b> avec eux de manière plus générale, afin de <b>faciliter la compréhension</b> avec cette dernière, et 
+           de leur éviter des frayeurs menant à la coupure du projet.
         </p>
     </div>
     <div class="imgHolder">
         <figure>
-            <img src="../Ressources-fr/PortailRR_AncienneInterface.png" alt="Ancienne interface">
+            <img src="../Ressources-fr/PortailRR_AncienneInterface.png" alt="Ancienne interface" class="horizontalimg">
             <figcaption class="legend">Ancienne interface du logiciel</figcaption>
         </figure>
         <figure>
-            <img src="../Ressources-fr/PortailRR_FicheHer.png" alt="Nouvelle interface">
+            <img src="../Ressources-fr/PortailRR_FicheHer.png" alt="Nouvelle interface" class="horizontalimg">
             <figcaption class="legend">Fiche de saisie d'héritier de la nouvelle interface</figcaption>
         </figure>
     </div>

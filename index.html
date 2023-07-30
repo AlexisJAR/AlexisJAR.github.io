@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==">
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
     <title>Alexis Jar - Portfolio</title>
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script> 
@@ -13,46 +15,68 @@
    });
 </script> 
 </head>
-<div class="header_fr">
-    <span class="mandatedname">Alexis JAR | </span>
-    <span class="separator"></span>
-    <span class="menu">
-        <a class="link" href="index.html">Accueil</a>
-        <a class="link" href="list_projects_fr.html">Réalisations</a>
-        <a class="link" href="list_skill_fr.html">Compétences</a>
-        <a class="link" href="timeline.html">Parcours</a>
-        <a class="link" href="contact.html">Contact</a>
-    </span>
-</div>
     <body>
-        <h2 class="title">Bienvenue, internaute !</h2>
-        <h3 class="title">Qui suis-je?</h3>
-        <div class="imgHolder">
-            <img src="Ressources-fr/portrait.jpg" alt="Portrait Alexis JAR" class="verticalimg">
-        </div>
-        <p class="txt">
-            Pour faire bref, mon nom est Alexis JAR. 
-            Jeune homme originaire du Sud de la France, je suis un étudiant en dernière année d'une école d'ingénierie informatique, Intech.
-            Parmi les cursus proposés, je me suis spécialisé dans l'ingénierie du logiciel. 
-            Par la suite, j'ai pu mettre a profit mes connaissances et compétences au travers d'un stage suivi d'une alternance au sein du cabinet de généalogie successorale 
-            Veyron-Perrin.
-            Vous trouverez une liste des principaux talents et savoirs accumulés au cours de ma période de formation auprès de ces deux organismes plus bas, dans la partie "En savoir
-            plus sur moi"
-            <br>
-            Outre mon parcours professionnel, je suis un grand passioné d'Histoire, un bassiste amateur et un rôlliste aguerri.
-        </p>
-        <div class="imgHolder">
-            <img src="Ressources-fr/bassismo.JPG" alt="Alexis JAR à la basse" class="horizontalimg">
-        </div>
-        <h3 class="title">
-            En savoir plus sur moi
-        </h3>
-        <ul>
-            <li><a class="link" href="presentation.html">Une présentation plus complète</a></li>
-            <li><a class="link" href="timeline.html">Mon parcours</a></li>
-            <li><a class="link" href="list_skill_fr.html">Mes compétences</a></li>
-            <li><a class="link" href="list_projects_fr.html">Mes réalisations</a></li>
-            <li><a class="link" href="contact.html">Me contacter</a></li>
-        </ul>
+        <main class="main" id="top">
+            <!--
+                Début du navbar
+            -->
+            <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900">
+                <div class="container pt-2">
+                    <span class="navbar-brand">Alexis JAR </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="index.html">Accueil</a>
+                    </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="presentation.html">Qui suis-je</a>
+                    </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="list_projects_fr.html">Réalisations</a>
+                    </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="list_skill_fr.html">Compétences</a>
+                    </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="timeline.html">Parcours</a>
+                    </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="contact.html">Contact</a>
+                    </span>
+                </div>
+            </nav>
+            <div class="mt-6"></div>
+            <!--
+                Fin du navbar
+            -->
+            <h2 class="title">Bienvenue, internaute !</h2>
+            <h3 class="title">Qui suis-je?</h3>
+            <div class="imgcontainer">
+                <img src="Ressources-fr/portrait.jpg" alt="Portrait Alexis JAR" class="img-fluid">
+            </div>
+            <div class="container"> 
+                <p class="txt">
+                    Pour faire bref, mon nom est Alexis JAR. 
+                    Jeune homme originaire du Sud de la France, je suis un étudiant en dernière année d'une école d'ingénierie informatique, Intech.
+                    Parmi les cursus proposés, je me suis spécialisé dans l'ingénierie du logiciel. 
+                    Par la suite, j'ai pu mettre a profit mes connaissances et compétences au travers d'un stage suivi d'une alternance au sein du cabinet de généalogie successorale 
+                    Veyron-Perrin.
+                    Vous trouverez une liste des principaux talents et savoirs accumulés au cours de ma période de formation auprès de ces deux organismes plus bas, dans la partie "En savoir
+                    plus sur moi"
+                    <br>
+                    Outre mon parcours professionnel, je suis un grand passioné d'Histoire, un bassiste amateur et un rôlliste aguerri. <a class="link" href="presentation.html"> → En savoir plus → </a>
+                </p>
+            </div>
+            <div class="imgcontainer">
+                <img src="Ressources-fr/bassismo.JPG" alt="Alexis JAR à la basse" class="img-fluid">
+            </div>
+            <h3 class="title">
+                En savoir plus sur moi
+            </h3>
+            <ul>
+                <li><a class="link" href="timeline.html">Mon parcours</a></li>
+                <li><a class="link" href="list_skill_fr.html">Mes compétences</a></li>
+                <li><a class="link" href="list_projects_fr.html">Mes réalisations</a></li>
+                <li><a class="link" href="contact.html">Me contacter</a></li>
+            </ul>
+        </main>
     </body>
 </html>

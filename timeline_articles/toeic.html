@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/theme.css">
-    <title>Alexis Jar - Portfolio</title>
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script> 
-   $(function(){
-      $('.header_fr').load("header_fr.html"); 
-   });
-</script> 
-</head>
-<body>
-    <div class="header_fr">
-        <span class="mandatedname">Alexis JAR | </span>
-        <span class="separator"></span>
-        <span class="menu">
-            <a class="link" href="../index.html">Accueil</a>
-            <a class="link" href="../list_projects_fr.html">Réalisations</a>
-            <a class="link" href="../list_skill_fr.html">Compétences</a>
-            <a class="link" href="../timeline.html">Parcours</a>
-            <a class="link" href="../contact.html">Contact</a>
-        </span>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/theme.css">
+        <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==">
+        <link href="../vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <title>Alexis Jar - Portfolio</title>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+               <!--
+                    Début du navbar
+                -->
+                <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900">
+                    <div class="container pt-2">
+                        <span class="navbar-brand">Alexis JAR </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../index.html">Accueil</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../presentation.html">Qui suis-je</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../list_projects_fr.html">Réalisations</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../list_skill_fr.html">Compétences</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../timeline.html">Parcours</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../contact.html">Contact</a>
+                        </span>
+                    </div>
+                </nav>
+                <div class="mt-6"></div>
+                <!--
+                    Fin du navbar
+                -->
     <div class="arrowreturn">
-      <a class="link" href="../timeline.html">← Retour</a>
+      <a href="../timeline.html" class="btn btn-secondary">← Retour</a>
     </div>
     <h3 class="title">TOEIC</h3>
-    <div class="txt">
-        Certification visant à évaluer le niveau des participants en anglais. L'épreuve pour obtenir cette certification se divise en deux parties : une partie orale et une partie écrite.
-        Cela permet à la fois d'évaluer le niveau d'anglais parlé et écrit, bien que se focalisant uniquement sur la compréhension de cette langue, et non l'expression en cette dernière.
+    <div class="container">
+        Le TOEIC (Test of English for International Communication) est un test d'évaluation de la compétence en anglais des personnes non-anglophones. Il mesure les compétences 
+        linguistiques des candidats dans les domaines de la compréhension orale et écrite en anglais des affaires. Le TOEIC est utilisé par les entreprises, les établissements 
+        d'enseignement et les organismes gouvernementaux pour évaluer le niveau d'anglais des candidats dans un contexte professionnel. Le score TOEIC est largement reconnu et 
+        utilisé comme référence pour évaluer les compétences linguistiques en anglais dans le monde professionnel.
         <br>
-        Certification préparée depuis mon entrée chez Intech, et qui devra être passée fin juin.
-    </div>
-    <div class="imgHolder">
+        Ce test a été développé et administré par l'ETS (Educational Testing Service), un organisme basé aux États-Unis. L'ETS est une organisation à but non-lucratif qui se 
+        consacre à l'évaluation éducative et linguistique à l'échelle mondiale. Il est connu pour ses tests standardisés largement utilisés, tels que le TOEFL 
+        (Test of English as a Foreign Language).
+        <br>
+        Préparant cette certification depuis mon entrée en école supérieure, et l’ayant présentée le premier juillet 2023, je l’ai obtenue le 1er juillet 2023 avec 985 points, 
+        équivalent à un niveau C1. Le niveau attendu afin d’obtenir le titre RNCP de niveau 7 que je prépare depuis 5 ans était de 820 points.
+</div>
+    <div class="contactcontainer">
         <figure>
-            <img src="../Ressources-fr/toeic logo.png" alt="Logo TOEIC">
+            <img src="../Ressources-fr/toeic logo.png" alt="Logo TOEIC" class="img-fluid">
         </figure>
     </div>
 </body>

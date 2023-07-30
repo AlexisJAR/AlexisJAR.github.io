@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/theme.css">
-    <title>Alexis Jar - Portfolio</title>
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script> 
-   $(function(){
-      $('.header_fr').load("header_fr.html"); 
-   });
-</script> 
-</head>
-<body>
-    <div class="header_fr">
-        <span class="mandatedname">Alexis JAR | </span>
-        <span class="separator"></span>
-        <span class="menu">
-            <a class="link" href="../index.html">Accueil</a>
-            <a class="link" href="../list_projects_fr.html">Réalisations</a>
-            <a class="link" href="../list_skill_fr.html">Compétences</a>
-            <a class="link" href="../timeline.html">Parcours</a>
-            <a class="link" href="../contact.html">Contact</a>
-        </span>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/theme.css">
+        <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==">
+        <link href="../vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <title>Alexis Jar - Portfolio</title>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+               <!--
+                    Début du navbar
+                -->
+                <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900">
+                    <div class="container pt-2">
+                        <span class="navbar-brand">Alexis JAR </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../index.html">Accueil</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../presentation.html">Qui suis-je</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../list_projects_fr.html">Réalisations</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../list_skill_fr.html">Compétences</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../timeline.html">Parcours</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../contact.html">Contact</a>
+                        </span>
+                    </div>
+                </nav>
+                <div class="mt-6"></div>
+                <!--
+                    Fin du navbar
+                -->
 
-    <div class="arrowreturn">
-      <a class="link" href="../timeline.html">← Retour</a>
-    </div>
+                <div class="arrowreturn">
+                    <a href="../timeline.html" class="btn btn-secondary">← Retour</a>
+                  </div>
     <h3 class="title">Baccalauréat Scientifique</h3>
-    <div class="txt">
-        Baccalauréat scientifique, option "Science de la Vie et de la Terre", spécialisation "Informatique et Sciences du Numérique" obtenu avec 11.63 de moyenne.
+    <div class="container">
+        Créé en 1808 sous l’impulsion de Napoléon 1er pour unifier l'évaluation des élèves à l'échelle nationale et faciliter leur entrée à l'université, le baccalauréat général 
+        est un diplôme de fin d'études secondaires en France. En 2018, année de mon passage de cet examen, il comprenait trois séries : scientifique (S), économique et sociale (ES) 
+        et littéraire (L). 
         <br>
-        Baccalauréat obtenu en juillet 2018, au sein du Lycée Geneviève de Gaulle Anthonioz, de Milhaud (30).
+        La série que je passais était la série dite scientifique, axée sur les mathématiques, les sciences physiques et chimiques, et, en ce qui me concerne, les sciences de la vie 
+        et de la terre. Nous devions également choisir un enseignement de spécialité parmi quatre matières : les trois précédemment citées, ainsi qu’une quatrième matière, intitulée 
+        « Informatique et Sciences du Numérique » (ISN). C’est cette quatrième matière que je choisis comme spécialité.
+        <br>
+        Cet examen, je le préparai en suivant l’enseignement du lycée public Geneviève de Gaulle Anthonioz, à Milhaud, dans le Gard. Il s’agit d’un lycée polyvalent, 
+        dont les cursus scolaires, outre ceux menant à l’obtention d’une série générale du baccalauréat, sont spécialisés dans les métiers de la santé et du social. 
+        <br>
+        En 2018, le lycée Geneviève de Gaulle Anthonioz a présenté 417 élèves au baccalauréat, séries générales et autres confondues, atteignant un taux de réussite de 89 %, dont 
+        je fis partie, obtenant ce diplôme avec une moyenne de 11.63/20.    
     </div>
-    <div class="imgHolder">
+    <div class="contactcontainer">
         <figure>
-            <img src="../Ressources-fr/g2ga.jpeg" alt="Logo TOEIC" class="icon">
+            <img src="../Ressources-fr/g2ga.jpeg" alt="Logo TOEIC" class="icon-img-contact">
         </figure>
     </div>
 </body>

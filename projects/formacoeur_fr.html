@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/theme.css">
-    <title>AlexisJar - Portfolio</title>
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script> 
-       $(function(){
-          $('.header_fr').load("../header_fr.html"); 
-       });
-    </script> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/theme.css">
+        <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==">
+        <link href="../vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <title>Alexis Jar - Portfolio</title>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
-        <div class="header_fr">
-            <span class="mandatedname">Alexis JAR | </span>
-            <span class="separator"></span>
-            <span class="menu">
-                <a class="link" href="../index.html">Accueil</a>
-                <a class="link" href="../list_projects_fr.html">Réalisations</a>
-                <a class="link" href="../list_skill_fr.html">Compétences</a>
-                <a class="link" href="../timeline.html">Parcours</a>
-                <a class="link" href="../contact.html">Contact</a>
-            </span>
-        </div>
+           <!--
+                Début du navbar
+            -->
+            <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900">
+                <div class="container pt-2">
+                    <span class="navbar-brand">Alexis JAR </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="../index.html">Accueil</a>
+                    </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="../presentation.html">Qui suis-je</a>
+                    </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="../list_projects_fr.html">Réalisations</a>
+                    </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="../list_skill_fr.html">Compétences</a>
+                    </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="../timeline.html">Parcours</a>
+                    </span>
+                    <span class="navbar-nav ms-auto">
+                        <a class="btn btn-secondary" href="../contact.html">Contact</a>
+                    </span>
+                </div>
+            </nav>
+            <div class="mt-6"></div>
+            <!--
+                Fin du navbar
+            -->
     <h2 class="title">Formacœur</h2>
+    <div class="container">
     <div class="txt">
         <p>
             <u>Formacœur</u> était un projet reposant avant tout sur <b>l’échange</b>. Tout d’abord par la conduite d’un <b>questionnaire</b> auprès du public de l’antenne nîmoise de l’association 
@@ -69,13 +86,15 @@
             ainsi que dans la façon d’aborder le public accueilli, afin de <b>ne brusquer ni de n’offenser personne</b>. 
         </p>
     </div>
-    <div class="imgHolder">
+    </div>
+    <div class="imgcontainer">
+        <div class="otherimagecontainer">
         <figure>
-            <img src="../Ressources-fr/Formacœur_camembert.png" alt="Résultats d'enquête" class="horizontalimg">
+            <img src="../Ressources-fr/Formacœur_camembert.png" alt="Résultats d'enquête" class="img-fluid">
             <figcaption class="legend">Extrait des résultats de l'enquête menée auprès du public des restos du cœur.</figcaption>
         </figure>
         <figure>
-            <img src="../Ressources-fr/Formacœur_livret.png" alt="Livret de formation" class="horizontalimg">
+            <img src="../Ressources-fr/Formacœur_livret.png" alt="Livret de formation" class="img-fluid">
             <figcaption class="legend">Premières pages du livret de formation distribué au public des restos du cœur.</figcaption>
         </figure>
     </div>
@@ -89,7 +108,7 @@
                 <li><a class="link" href="../skills/adaptation_fr.html">Adaptation</a></li>
                 <li><a class="link" href="../skills/communication_fr.html">Communication</a></li>
             </ul>
-        
+        </div>
     </div>
 </body>
 </html>

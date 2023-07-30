@@ -1,0 +1,93 @@
+body{
+    background-color:rgb(39, 37, 37);
+    text-align: justify;
+    max-width: 80ch;
+    margin:auto;
+}
+
+.txt {
+    color:darkgreen;
+}
+
+.link {
+    color:steelblue;
+}
+
+a:visited {
+    color: steelblue;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    margin-left: -3%;
+}
+
+img {
+    border-radius: 8px;
+}
+
+.horizontalimg{
+    width: 100%;
+    height: 100%;
+}
+
+.verticalimg{
+    width: 60%;
+    height: 70%;
+}
+
+.icon-img-contact{
+    width:20%;
+    height:20%;
+}
+
+.horizontalicon {
+    width:25%;
+    height:15%;
+}
+
+.imgHolder{
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color:darkgoldenrod;
+}
+
+.legend {
+    color:bisque;
+    font-style:italic;
+}
+
+.header_fr {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  text-align: center;
+}
+
+.arrowreturn{
+    padding-left: 0%;
+    padding-top: 5%;
+}
+
+.mandatedname{
+    margin-left:0%;
+    color:steelblue;
+}
+
+.menu{
+    margin-right:0%;
+}
+
+.separator{
+    width:25%;
+}
+
+.contactcontainer{
+    margin-top: 25%;
+    text-align: center;
+    word-spacing: 800%;
+}

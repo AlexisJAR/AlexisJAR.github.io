@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/theme.css">
-    <title>AlexisJar - Portfolio</title>
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script> 
-       $(function(){
-          $('.header_fr').load("../header_fr.html"); 
-       });
-    </script> 
-    </head>
-    <body>
-        <div class="header_fr">
-            <span class="mandatedname">Alexis JAR | </span>
-            <span class="separator"></span>
-            <span class="menu">
-                <a class="link" href="../index.html">Accueil</a>
-                <a class="link" href="../list_projects_fr.html">Réalisations</a>
-                <a class="link" href="../list_skill_fr.html">Compétences</a>
-                <a class="link" href="../timeline.html">Parcours</a>
-                <a class="link" href="../contact.html">Contact</a>
-            </span>
-        </div>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="../css/theme.css">
+            <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==">
+            <link href="../vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+            <title>Alexis Jar - Portfolio</title>
+            <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+            <style>
+                .checked {
+                  color: gold;
+                }
+                .unchecked {
+                    color: grey;
+                }
+                </style>
+        </head>
+        <body>
+               <!--
+                    Début du navbar
+                -->
+                <nav class="navbar navbar-light sticky-top" data-navbar-darken-on-scroll="900">
+                    <div class="container pt-2">
+                        <span class="navbar-brand">Alexis JAR </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../index.html">Accueil</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../presentation.html">Qui suis-je</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../list_projects_fr.html">Réalisations</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../list_skill_fr.html">Compétences</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../timeline.html">Parcours</a>
+                        </span>
+                        <span class="navbar-nav ms-auto">
+                            <a class="btn btn-secondary" href="../contact.html">Contact</a>
+                        </span>
+                    </div>
+                </nav>
+                <div class="mt-6"></div>
+                <!--
+                    Fin du navbar
+                -->
     <h2 class="title">Technologies web</h2>
+    <div class="starContainer">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star unchecked"></span>
+        <span class="fa fa-star unchecked"></span>
+        <span class="fa fa-star unchecked"></span>
+    </div>
+    <div class="container">
     <div class="txt">
         <p>
             Nous entendrons ici le terme "Technologies web" dans le sens de "technologies servant à créer et afficher des sites et applications accessibles depuis Internet".
@@ -67,11 +99,14 @@
             tout en <b>se renseignant et suivant des formations concernant des technologies inconnues</b>. Par exemple, en suivant le tutoriel <b>Ruby</b> 
             disponible sur <b><a class="link" href="https://www.tutorialspoint.com/ruby/index.htm">« tutorialspoint »</a></b>, un langage qui d’après <b><a class="link" href="https://w3techs.com/technologies/details/pl-ruby">« w3tech »</a></b> est peut-être moins 
             utilisé que PHP, mais employé par des sites fréquemment visités, et m’a intrigué. 
+            Il me faudra aussi <b>redécouvrir les versions plus récentes</b> des langages et technologies utilisées auparavant, afin de <b>prendre connaissance de leurs nouvelles 
+                possibilités</b> ainsi que du contexte dans lequel elles s’inscrivent, et par ce biais être capable d’<b>agrandir ma gamme de solutions</b> à d’éventuels problèmes.
         </p>
     </div>
-    <div class="imgHolder">
+</div>
+    <div class="imgcontainer">
         <figure>
-            <img src="../Ressources-fr/TechnosWebs.png" alt="Schéma symbole Internet dans ordinateur" class="horizontalimg">
+            <img src="../Ressources-fr/TechnosWebs.png" alt="Schéma symbole Internet dans ordinateur" class="img-fluid">
         </figure>
     </div>
     <div>
